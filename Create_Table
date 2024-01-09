@@ -1,6 +1,36 @@
-##Movie Table
+// ##Movie Table
 
-# -- Create movie table
+/*
+P1: Entities, Attributes, and Table Structures
+
+Entity Type – Movie Ticketing Platform
+Entity Value –  Movie,  Theatre , Screens, Show, Seat
+Attributes:
+    - Movie_ID (Primary Key)
+    - movie_name
+    - total_time
+    - Genres
+    - Language
+    - movie_ratings
+
+- Theatre
+  - Attributes:
+    - Theatre_ID (Primary Key)
+    - Theatre_Name
+    - Location
+
+- Screens
+  - Attributes:
+    - Screen_ID (Primary Key)
+    - screen_name
+
+- Show
+  - Attributes:
+    - Show_ID (Primary Key)
+    - show_date
+    - show_time
+*/
+// -- Create movie table
 CREATE TABLE Movie (
 movie_id INT NOT NULL AUTO_INCREMENT, 
 movie_name VARCHAR(50) NOT NULL, 
@@ -11,9 +41,9 @@ movie_ratings VARCHAR(50),
 PRIMARY KEY(movie_id)
  );
 
-##Theater Table
+// ##Theater Table
 
-# -- Create Theatre table
+// -- Create Theatre table
 
 CREATE TABLE Theatre (
     Theatre_ID VARCHAR(10) NOT NULL,
@@ -23,9 +53,9 @@ CREATE TABLE Theatre (
 );
 
 
-##Show Table
+// ##Show Table
 
-# -- Create Show table
+// # -- Create Show table
 CREATE TABLE Show (
     Show_ID INT NOT NULL PRIMARY KEY,
     Show_date VARCHAR(100),
@@ -33,9 +63,9 @@ CREATE TABLE Show (
 );
 
 
-##Screen Table
+// ##Screen Table
 
-#-- Create Screen table
+// #-- Create Screen table
 CREATE TABLE Screen (
     Screen_ID INT NOT NULL PRIMARY KEY,
     Screen_name VARCHAR(50)
