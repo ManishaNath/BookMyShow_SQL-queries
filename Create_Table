@@ -37,7 +37,7 @@ CREATE TABLE Show (
 
 #-- Create Screen table
 CREATE TABLE Screen (
-    Screen_ID INT PRIMARY KEY,
+    Screen_ID INT NOT NULL PRIMARY KEY,
     Screen_name VARCHAR(50)
 );
 
