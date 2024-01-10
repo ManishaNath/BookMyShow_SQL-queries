@@ -1,4 +1,4 @@
--- Tables involved in BookMyShow with No relations
+-- Inserting into Tables involved in BookMyShow with No relations
 
 //Movie Table
 
