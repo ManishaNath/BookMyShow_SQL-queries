@@ -1,3 +1,6 @@
+-- Tables involved in BookMyShow with No relations
+--P1 - List down all the entities, their attributes and the table structures for the scenario 
+
 // ##Movie Table
 
 /*
@@ -56,7 +59,7 @@ CREATE TABLE Theatre (
 // ##Show Table
 
 // # -- Create Show table
-CREATE TABLE Show (
+CREATE TABLE ShowTable (
     Show_ID INT NOT NULL PRIMARY KEY,
     Show_date VARCHAR(100),
     Show_Time VARCHAR(50)
