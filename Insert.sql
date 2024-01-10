@@ -1,3 +1,5 @@
+-- Tables involved in BookMyShow with No relations
+
 //Movie Table
 
 //# -- Insert values into the movie table---
