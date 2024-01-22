@@ -10,19 +10,47 @@ P2 - Write a query to list down all the shows on a given date at a given theatre
 
 
 ER DIAGRAM
-+--------------+      +-------------+     +----------------+       +-------------+
-|    Movie     |      |   Theater   |     | ShowTable      |       |  Screen     |
-+--------------+      +-------------+     +----------------+       +-------------+
-| Movie_ID (PK)|      | Theater_ID  |     | Show_ID (PK)   |       |Screen_ID(PK)|
-| Movie_name   |      | Theater_name|     | Show_timestamp |       | Screen_name |
-| Total_time   |      | Theater_loc |     | Movie_ID (FK)  |       | Show_ID (FK)|
-| Genres       |      +-------------+     | Screen_ID (FK) |       +-------------+
-| Language     |                          +----------------+       
++--------------+       
+|    Movie     |       
++--------------+      
+| Movie_ID (PK)|     
+| Movie_name   |      
+| Total_time   |     
+| Genres       |       
+| Language     |                              
 | Movie_ratings|                                      
 +--------------+                                   
 
+Theater table
++-------------+     
+|   Theater   |     
++-------------+    
+| Theater_ID  |    
+| Theater_name|    
+| Theater_loc |     
++-------------+     
+                   
 
+Show Table
++----------------+      
+| ShowTable      |       
++----------------+          
+| Show_ID (PK)   |       
+| Show_timestamp |      
+| Movie_ID (FK)  |      
+| Screen_ID (FK) |       
++----------------+   
 
+Screen Table
+ +-------------+
+ |  Screen     |
+ +-------------+   
+ |Screen_ID(PK)|
+ | Screen_name |
+ | Show_ID (FK)|
+ +-------------+
+
+ 
 In this ER diagram:
 
 Movie and Theater are the main entities with their respective attributes.
