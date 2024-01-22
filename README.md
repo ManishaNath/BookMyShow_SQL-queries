@@ -6,10 +6,8 @@ P1 - List down all the entities, their attributes and the table structures for t
 
 P2 - Write a query to list down all the shows on a given date at a given theatre along with their respective show timings. 
 
-
-
-
 ER DIAGRAM
+
 +--------------+       
 |    Movie     |       
 +--------------+      
@@ -22,6 +20,7 @@ ER DIAGRAM
 +--------------+                                   
 
 Theater table
+
 +-------------+     
 |   Theater   |     
 +-------------+    
@@ -32,6 +31,7 @@ Theater table
                    
 
 Show Table
+
 +----------------+      
 | ShowTable      |       
 +----------------+          
@@ -42,6 +42,7 @@ Show Table
 +----------------+   
 
 Screen Table
+
  +-------------+
  |  Screen     |
  +-------------+   
