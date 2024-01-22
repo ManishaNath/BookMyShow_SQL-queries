@@ -9,7 +9,7 @@ P2 - Write a query to list down all the shows on a given date at a given theatre
 ER DIAGRAM
 
 +--------------+       
-|    Movie     |       
+| Movie Table  |       
 +--------------+      
 | Movie_ID (PK)|     
 | Movie_name   |      
@@ -19,10 +19,10 @@ ER DIAGRAM
 | Movie_ratings|                                      
 +--------------+                                   
 
-Theater table
+
 
 +-------------+     
-|   Theater   |     
+|Theater table|     
 +-------------+    
 | Theater_ID  |    
 | Theater_name|    
@@ -33,7 +33,7 @@ Theater table
 Show Table
 
 +----------------+      
-| ShowTable      |       
+| Show  Table    |       
 +----------------+          
 | Show_ID (PK)   |       
 | Show_timestamp |      
@@ -44,7 +44,7 @@ Show Table
 Screen Table
 
  +-------------+
- |  Screen     |
+ |Screen Table |
  +-------------+   
  |Screen_ID(PK)|
  | Screen_name |
