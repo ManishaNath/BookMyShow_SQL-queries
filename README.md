@@ -10,14 +10,30 @@ P2 - Write a query to list down all the shows on a given date at a given theatre
 
 
 ER DIAGRAM
-
 +--------------+      +-------------+     +----------------+       +-------------+
 |    Movie     |      |   Theater   |     | ShowTable      |       |  Screen     |
 +--------------+      +-------------+     +----------------+       +-------------+
 | Movie_ID (PK)|      | Theater_ID  |     | Show_ID (PK)   |       |Screen_ID(PK)|
-| Movie_name   |      | Theater_name|     | Show_date      |       | Screen_name |
-| Total_time   |      | Theater_loc |     | Show_Time      |       | Show_ID (FK)|
-| Genres       |      +-------------+     | Movie_ID (FK)  |       +-------------+
-| Language     |                          | Theater_ID (FK)|       
-| Movie_ratings|                          +----------------+       
+| Movie_name   |      | Theater_name|     | Show_timestamp |       | Screen_name |
+| Total_time   |      | Theater_loc |     | Movie_ID (FK)  |       | Show_ID (FK)|
+| Genres       |      +-------------+     | Screen_ID (FK) |       +-------------+
+| Language     |                          +----------------+       
+| Movie_ratings|                                      
 +--------------+                                   
+
+
+
+In this ER diagram:
+
+Movie and Theater are the main entities with their respective attributes.
+ShowTable represents the association between movies, theaters, and show details.
+Screen is associated with ShowTable to represent the screen information for each show.
+Key:
+
+(PK): Primary Key
+(FK): Foreign Key
+Here are the relationships:
+
+Movie and ShowTable: One-to-Many relationship (One movie can have multiple showings).
+Theater and ShowTable: One-to-Many relationship (One theater can have multiple shows).
+ShowTable and Screen: One-to-Many relationship (One show can have multiple screens).
